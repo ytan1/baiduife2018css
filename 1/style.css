@@ -1,0 +1,43 @@
+#div1, #div2{
+
+    text-align: center;
+}
+#div1{
+    width: 100px;
+    margin: 200px auto 0;
+    line-height: 40px;
+    height: 40px;
+    position: relative;
+    transition: color 0.6s ease-in-out;
+}
+#div2{
+    width: 100px;
+    margin: 50px auto;
+    border: 1px #999 solid;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 4px 2px -2px #666;
+}
+#inside{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-bottom: 2px blue solid;
+    transition: width 0.6s ease-in-out;
+}
+.contract{
+    width:0;
+}
+.expanding{
+    width: 100px;
+
+}
+.blue{
+    color: blue;
+}
+.graybackground{
+    background: gray;
+}
