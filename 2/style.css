@@ -1,0 +1,27 @@
+.box{
+    color: #010;
+    border: 2px #ddd solid;
+    background: #eee;
+    width: 54px;
+    height: 60px;
+    display: inline-block;
+    text-align: center;
+    line-height: 60px;
+    margin: 20px;
+}
+
+#box1{
+    transform: skewX(27deg);
+}
+#box2{
+    transform: rotateY(60deg);
+}
+#box3{
+    transform: rotateZ(40deg);
+}
+#box4{
+    transform: translateY(40px);
+}
+#box5{
+    transform: rotateX(40deg) rotateY(60deg) rotateZ(10deg) scale(1.8, 1.2) translateX(50px) translateZ(-60px);
+}
