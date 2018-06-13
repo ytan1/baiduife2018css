@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>assignment4</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="front">
+            <img src="./正面.jpg" class="inside">
+        </div>
+        <div class="back">
+            <img src="./反面.jpg" class="inside">
+        </div>
+
+    </div>
+
+
+    <!-- for IE does not support transform-style-->
+    <script type="text/javascript">
+        var back = document.getElementsByClassName('back')[0];
+        back.classList.add('hide');
+        var container = document.getElementsByClassName('container')[0];
+        container.onmouseover = function(){
+            setTimeout(function(){
+                back.classList.remove('hide');
+            }, 300);
+        }
+        container.onmouseout = function(){
+            setTimeout(function(){
+                back.classList.add('hide');
+            }, 300);
+        }
+    </script>
+
+</body>
+</html>
