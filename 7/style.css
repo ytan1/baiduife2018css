@@ -1,0 +1,49 @@
+.form__input:focus + .form__label span, .havetext{ 
+    transform: scale(0.6,0.6);
+}
+
+.form__label::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    background: #4286f4
+}
+.form__input:focus + .form__label::after{ 
+    width: 100%;
+    
+}
+.form__input:not(:focus) + .form__label::after{ 
+    width: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+
+.beating{
+    animation: beating 0.4s ease-in-out 0s infinite normal;
+    -webkit-animation: beating 0.4s ease-in-out 0s infinite normal;
+}
+@keyframes beating{
+    0%{
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(0.9, 0.9);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
+@-webkit-keyframes beating{
+    0%{
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(0.9, 0.9);
+    }
+    100%{
+        transform: scale(1,1);
+    }
+}
