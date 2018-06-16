@@ -1,0 +1,10 @@
+html{
+    background: #7895cc;
+}
+
+#bm{
+    width: 450px;
+    height: 350px;
+    margin: 100px auto;
+    border: 1px solid red;
+}
